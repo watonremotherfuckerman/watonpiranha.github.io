@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://openclipart.org/download/38719/dog-with-bone.svg" type="image/svg+xml">
+    <title>Kynosargo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
+    <link href="path/to/video-js.css" rel="stylesheet">
+  <script src="path/to/video.min.js"></script>
+
+</head>
+<body class="bg-dark text-center text-light">
+
+<h1 class="h1">Club de la pelea Latino</h1>
+<a href="index.html" class="text-light">Volver al Index</a>
+<div class="container text-light">
+    <div class="row">
+      <div class="col-12 text-center"><video id="my-video" class="video-js vjs-default-skin" controls preload="auto" width="640" height="264" data-setup='{}'>
+        <source src="https://server43.pelispluscdn.info/newhls/c7149f6295fc82ff3ff645a0593e303f/EP.0.1.v0.1677558557.720.m3u8" type="application/x-mpegURL">
+      </video></div>
+     
+    </div>
+  </div>
+
+  <script>
+    var player = videojs('my-video', {
+      fluid: true, // Establece el reproductor en modo de tamaño variable para adaptarse al contenedor
+      controlBar: {
+        fullscreenToggle: true // Habilita el botón de pantalla completa
+      }
+    });
+  </script>
+  <script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
+</body>
+
+</html>
